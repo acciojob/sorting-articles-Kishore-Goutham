@@ -3,8 +3,8 @@ let ul = document.getElementById("band")
 const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
 
 let sorted = bands.sort((a,b)=>{
-	let bandA = a.toLowerCase().replace(/^(a |an |the )/,"")
-	let bandB = b.toLowerCase().replace(/^(a |an |the )/,"")
+	let bandA = a.toLowerCase().replace(/^(a |an |the )/i,"")
+	let bandB = b.toLowerCase().replace(/^(a |an |the )/i,"")
 	return bandA.localeCompare(bandB)
 })
 
